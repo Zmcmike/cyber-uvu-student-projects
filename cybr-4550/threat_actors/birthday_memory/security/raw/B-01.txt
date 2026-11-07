@@ -1,0 +1,6 @@
+
+Saturday, November 7, 2026 3:50:22 PM
+NAME               IMAGE                COMMAND                  SERVICE    CREATED         STATUS                   PORTS
+thebirthdates-db   postgres:16-alpine   "docker-entrypoint.sΓÇª"   postgres   2 minutes ago   Up 2 minutes (healthy)   0.0.0.0:5544->5432/tcp
+
+
