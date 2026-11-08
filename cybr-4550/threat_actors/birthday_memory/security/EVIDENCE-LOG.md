@@ -31,11 +31,11 @@ Rules for every capture:
 | H-02a | A01 | Unauthenticated CREATE | POST a record you invent | CONFIRMED |
 | H-02b | A01 | Unauthenticated UPDATE | PUT on the record you created | CONFIRMED |
 | H-02c | A01 | Unauthenticated DELETE | DELETE on the record you created | CONFIRMED |
-| H-03 | A05 | CORS allows any origin | `curl.exe -i -H "Origin: http://evil.test" ...` plus a page served from a second local origin | CONFIRMED |
+| H-03 | A05 | CORS allows any origin | `curl.exe -i -H "Origin: http://evil.example" ...` (header check only) | CONFIRMED |
 | H-04 | A05 | Missing security headers, X-Powered-By | Header block from any `curl.exe -i`, compare to Helmet defaults | CONFIRMED |
 | H-05 | A05 | Health endpoint leaks error text | Stop the DB container briefly, call /api/health | NOT CONFIRMED (error text was empty on connection refused; code returns error.message, so other failures could leak) |
 | H-06 | Availability | No rate limit, no pagination | Small controlled request burst only, count records returned | CONFIRMED |
-| H-07 | Availability | Email regex slow on long input | Small timing test only (optional) | TODO |
+| H-07 | Availability | Email regex slow on long input | Small timing test only (optional) | NOT TESTED (skipped by choice, low value) |
 | H-15 | A07 | No authentication layer exists at all | Request with no credentials succeeds, no login route, no auth middleware in code | CONFIRMED |
 | H-16a | A09 | No audit trail: database logs show nothing about the delete | `docker logs --timestamps thebirthdates-db` after the delete | CONFIRMED |
 | H-16b | A09 | No audit trail: server code logs only startup and errors | Search server/src for `console.` | CONFIRMED |
@@ -74,22 +74,22 @@ Rules for every capture:
 | ID | OWASP | Tool | Command | Status |
 |----|-------|------|---------|--------|
 | S-01 | A06 | npm audit | `npm audit` in server and client | CONFIRMED (server: 3 = 1 critical, 1 high, 1 moderate; client: 2 high, both dev-server tooling) |
-| S-02 | A02/A05 | gitleaks on full history | `gitleaks detect` | NOT VULNERABLE (gitleaks: 11 commits scanned, no leaks found; git log lists 12, gap unexplained so far) |
+| S-02 | A02/A05 | gitleaks on full history | `gitleaks detect` | NOT VULNERABLE (gitleaks: no leaks in the 12 commits with file changes; 13 on the branch, one only adds an empty file; rescanned after the evidence commit) |
 | S-03 | A06 | Trivy on postgres image, with CVE count | `trivy image postgres:16-alpine` | CONFIRMED (62 total: alpine 3.24.4 OS packages 1 medium; usr/local/bin/gosu Go binary 61 = 1 unknown, 3 low, 31 medium, 25 high, 1 critical) |
 | S-04 | Surface | nmap, localhost only | `nmap -p 4000,5173,5544 127.0.0.1` (optional) | CONFIRMED (PowerShell port check, nmap not installed: 4000 and 5544 open on 127.0.0.1; control ports 5432 and 8080 closed; 5173 refused on 127.0.0.1 because Vite listens on IPv6 [::1] only, HTTP 200 via localhost, so web app is loopback-only unlike API and DB) |
 
 ## Coverage matrix (every required category needs a verdict)
 | Category | Evidence IDs | Verdict |
 |----------|--------------|---------|
-| A01 Broken Access Control | H-01, H-02a, H-02b, H-02c, H-09, N-03 | TODO |
-| A02 Cryptographic Failures | H-10, H-17, H-18, H-21 | TODO |
-| A03 Injection | N-01, N-02 | TODO |
-| A04 Insecure Design | H-24 | TODO |
-| A05 Security Misconfiguration | H-03, H-04, H-05, H-08, H-11, H-12, H-13, H-14, H-19, H-20 | TODO |
-| A06 Vulnerable and Outdated Components | S-01, S-03 | TODO |
-| A07 Identification and Authentication Failures | H-15 | TODO |
-| A08 Software and Data Integrity Failures | H-23 | TODO |
-| A09 Logging and Monitoring Failures | H-16a, H-16b | TODO |
-| A10 SSRF | N-04 | TODO |
-| Container-specific | H-12, H-13, H-19, H-20, H-21, S-03 | TODO |
-| Availability | H-06, H-07 | TODO |
+| A01 Broken Access Control | H-01, H-02a, H-02b, H-02c, H-09, N-03 | CONFIRMED (F-01); N-03 NOT VULNERABLE |
+| A02 Cryptographic Failures | H-10, H-17, H-18, H-21 | CONFIRMED (F-04, F-05) |
+| A03 Injection | N-01, N-02 | NOT VULNERABLE (tested) |
+| A04 Insecure Design | H-24 | CONFIRMED (root cause of F-01) |
+| A05 Security Misconfiguration | H-03, H-04, H-05, H-08, H-11, H-12, H-13, H-14, H-19, H-20 | CONFIRMED (F-03, F-06, F-09); H-05 and H-20 NOT CONFIRMED |
+| A06 Vulnerable and Outdated Components | S-01, S-03 | CONFIRMED (F-08, F-09) |
+| A07 Identification and Authentication Failures | H-15 | CONFIRMED (F-01) |
+| A08 Software and Data Integrity Failures | H-23 | CONFIRMED (F-09) |
+| A09 Logging and Monitoring Failures | H-16a, H-16b | CONFIRMED (F-02) |
+| A10 SSRF | N-04 | NOT APPLICABLE (no outbound request code) |
+| Container-specific | H-12, H-13, H-19, H-20, H-21, S-03 | CONFIRMED (F-03, F-04, F-09); H-20 NOT CONFIRMED |
+| Availability | H-06, H-07 | CONFIRMED (F-07); H-07 NOT TESTED (skipped, low value) |
