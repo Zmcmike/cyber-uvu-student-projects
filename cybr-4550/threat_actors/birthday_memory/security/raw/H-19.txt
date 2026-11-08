@@ -1,0 +1,44 @@
+
+Saturday, November 7, 2026 6:00:37 PM
+
+IgnoreCase : True
+LineNumber : 1
+Line       : POSTGRES_USER=birthday
+Filename   : InputStream
+Path       : InputStream
+Pattern    : POSTGRES
+Context    : 
+Matches    : {0}
+
+
+IgnoreCase : True
+LineNumber : 2
+Line       : POSTGRES_PASSWORD=birthday
+Filename   : InputStream
+Path       : InputStream
+Pattern    : POSTGRES
+Context    : 
+Matches    : {0}
+
+
+IgnoreCase : True
+LineNumber : 3
+Line       : POSTGRES_DB=thebirthdates
+Filename   : InputStream
+Path       : InputStream
+Pattern    : POSTGRES
+Context    : 
+Matches    : {0}
+
+
+IgnoreCase : True
+LineNumber : 11
+Line       : PGDATA=/var/lib/postgresql/data
+Filename   : InputStream
+Path       : InputStream
+Pattern    : POSTGRES
+Context    : 
+Matches    : {0}
+
+
+

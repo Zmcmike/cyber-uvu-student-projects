@@ -1,0 +1,9 @@
+
+Saturday, November 7, 2026 5:35:28 PM
+{"id":"34464167-0d53-4fe6-afab-ff9590a27152","firstName":"Extra","lastName":"Fields","birthdate":"1995-05-05","phone":"+1 415 555 0198","email":"extra@example.com","createdAt":"2026-11-08T00:35:28.412Z","updatedAt":"2026-11-08T00:35:28.412Z","age":31,"turningAge":32,"daysUntil":179,"nextBirthday":"2027-05-05"}
+
+--- bad id ---
+{"error":"Not found."}
+HTTP 404
+
+

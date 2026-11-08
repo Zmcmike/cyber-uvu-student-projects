@@ -1,0 +1,15 @@
+
+Saturday, November 7, 2026 4:18:50 PM
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 329
+ETag: W/"149-VcqYDk0E1/OPbWQiUxyLsQcqRx0"
+Date: Sat, 07 Nov 2026 23:18:50 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"id":"5034efc4-f6cd-4060-ab2b-9003ded56413","firstName":"Zed","lastName":"Testperson-Edited","birthdate":"1995-05-15","phone":"+1 555 010 0000","email":"zed.testperson@example.com","createdAt":"2026-11-07T23:15:23.082Z","updatedAt":"2026-11-07T23:18:50.112Z","age":31,"turningAge":32,"daysUntil":189,"nextBirthday":"2027-05-15"}
+
+

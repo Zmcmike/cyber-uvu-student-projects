@@ -1,0 +1,15 @@
+
+Saturday, November 7, 2026 5:25:34 PM
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 333
+ETag: W/"14d-GdWq8pyzbZxQWbfIr/3aoysFc18"
+Date: Sun, 08 Nov 2026 00:25:34 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"id":"e1f8ca39-3938-40ae-9df2-36e49f09b633","firstName":"<img src=x onerror=alert(1)>","lastName":"XSS-Test","birthdate":"1990-01-01","phone":"+1 415 555 0199","email":"xss@example.com","createdAt":"2026-11-08T00:25:34.903Z","updatedAt":"2026-11-08T00:25:34.903Z","age":36,"turningAge":37,"daysUntil":55,"nextBirthday":"2027-01-01"}
+
+

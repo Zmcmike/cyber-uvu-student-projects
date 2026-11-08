@@ -1,0 +1,9 @@
+
+Saturday, November 7, 2026 5:42:36 PM
+ rolname  | rolsuper | rolcreatedb | rolcreaterole 
+----------+----------+-------------+---------------
+ birthday | t        | t           | t
+(1 row)
+
+
+

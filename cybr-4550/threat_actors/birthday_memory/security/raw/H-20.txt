@@ -1,0 +1,14 @@
+
+Saturday, November 7, 2026 6:01:21 PM
+uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video)
+--- processes ---
+USER     PID   COMMAND
+postgres     1 postgres
+postgres    27 postgres: checkpointer 
+postgres    28 postgres: background writer 
+postgres    30 postgres: walwriter 
+postgres    31 postgres: autovacuum launcher 
+postgres    32 postgres: logical replication launcher 
+root      4283 ps -o user,pid,args
+
+

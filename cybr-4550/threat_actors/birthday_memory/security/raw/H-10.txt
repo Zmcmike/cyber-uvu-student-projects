@@ -1,0 +1,28 @@
+
+Saturday, November 7, 2026 5:43:20 PM
+ first_name | last_name |      phone      |         email         
+------------+-----------+-----------------+-----------------------
+ Ada        | Lovelace  | +1 415 555 0101 | ada@example.com
+ Grace      | Hopper    | +1 415 555 0102 | grace@example.com
+ Alan       | Turing    | +1 415 555 0103 | alan@example.com
+ Katherine  | Johnson   | +1 415 555 0104 | katherine@example.com
+(4 rows)
+
+                             Table "public.birthdays"
+   Column   |           Type           | Collation | Nullable |      Default      
+------------+--------------------------+-----------+----------+-------------------
+ id         | uuid                     |           | not null | gen_random_uuid()
+ first_name | text                     |           | not null | 
+ last_name  | text                     |           | not null | 
+ birthdate  | date                     |           | not null | 
+ phone      | text                     |           |          | 
+ email      | text                     |           |          | 
+ created_at | timestamp with time zone |           | not null | now()
+ updated_at | timestamp with time zone |           | not null | now()
+Indexes:
+    "birthdays_pkey" PRIMARY KEY, btree (id)
+    "birthdays_month_day_idx" btree (EXTRACT(month FROM birthdate), EXTRACT(day FROM birthdate))
+    "birthdays_name_idx" btree (lower(last_name), lower(first_name))
+
+
+

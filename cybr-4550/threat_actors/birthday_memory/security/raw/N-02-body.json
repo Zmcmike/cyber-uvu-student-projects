@@ -1,0 +1,1 @@
+{"firstName":"<img src=x onerror=alert(1)>","lastName":"XSS-Test","birthdate":"1990-01-01","phone":"+1 415 555 0199","email":"xss@example.com"}

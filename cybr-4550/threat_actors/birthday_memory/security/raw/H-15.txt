@@ -1,0 +1,14 @@
+
+Saturday, November 7, 2026 5:04:56 PM
+db.js:12: PGPASSWORD = 'birthday',
+db.js:17: const ssl = PGSSL === 'true' ? { rejectUnauthorized: false } : undefined;
+db.js:25: password: PGPASSWORD,
+index.js:10: app.use(cors());
+index.js:11: app.use(express.json());
+index.js:22: app.use('/api/birthdays', birthdaysRouter);
+index.js:24: app.use((_req, res) => {
+index.js:28: // eslint-disable-next-line no-unused-vars -- Express identifies error middleware by arity.
+index.js:29: app.use((error, _req, res, _next) => {
+routes.js:14: /** Wraps an async handler so rejected promises reach the error middleware. */
+
+

@@ -1,0 +1,8 @@
+
+Saturday, November 7, 2026 5:41:51 PM
+db.js:11: PGUSER = 'birthday',
+db.js:12: PGPASSWORD = 'birthday',
+docker-compose.yml:8: POSTGRES_USER: birthday
+docker-compose.yml:9: POSTGRES_PASSWORD: birthday
+
+

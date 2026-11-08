@@ -1,0 +1,36 @@
+
+Saturday, November 7, 2026 5:53:42 PM
+total 136
+drwx------   19 postgres postgres      4096 Nov  8 00:12 .
+drwxr-xr-x    1 root     root          4096 Nov  8 00:53 ..
+-rw-------    1 postgres postgres         3 Nov  7 22:47 PG_VERSION
+drwx------    6 postgres postgres      4096 Nov  7 22:47 base
+drwx------    2 postgres postgres      4096 Nov  8 00:13 global
+drwx------    2 postgres postgres      4096 Nov  7 22:47 pg_commit_ts
+drwx------    2 postgres postgres      4096 Nov  7 22:47 pg_dynshmem
+-rw-------    1 postgres postgres      5743 Nov  7 22:47 pg_hba.conf
+-rw-------    1 postgres postgres      2640 Nov  7 22:47 pg_ident.conf
+drwx------    4 postgres postgres      4096 Nov  8 00:42 pg_logical
+drwx------    4 postgres postgres      4096 Nov  7 22:47 pg_multixact
+drwx------    2 postgres postgres      4096 Nov  7 22:47 pg_notify
+drwx------    2 postgres postgres      4096 Nov  7 22:47 pg_replslot
+drwx------    2 postgres postgres      4096 Nov  7 22:47 pg_serial
+drwx------    2 postgres postgres      4096 Nov  7 22:47 pg_snapshots
+drwx------    2 postgres postgres      4096 Nov  8 00:12 pg_stat
+drwx------    2 postgres postgres      4096 Nov  7 22:47 pg_stat_tmp
+drwx------    2 postgres postgres      4096 Nov  7 22:47 pg_subtrans
+drwx------    2 postgres postgres      4096 Nov  7 22:47 pg_tblspc
+drwx------    2 postgres postgres      4096 Nov  7 22:47 pg_twophase
+drwx------    3 postgres postgres      4096 Nov  7 22:47 pg_wal
+drwx------    2 postgres postgres      4096 Nov  7 22:47 pg_xact
+-rw-------    1 postgres postgres        88 Nov  7 22:47 postgresql.auto.conf
+-rw-------    1 postgres postgres     29929 Nov  7 22:47 postgresql.conf
+-rw-------    1 postgres postgres        24 Nov  8 00:12 postmaster.opts
+-rw-------    1 postgres postgres        94 Nov  8 00:12 postmaster.pid
+---
+46.2M	/data
+---
+/data/base/16384/16432
+/data/pg_wal/000000010000000000000001
+
+

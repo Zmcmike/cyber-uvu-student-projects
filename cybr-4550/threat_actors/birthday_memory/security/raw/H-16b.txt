@@ -1,0 +1,13 @@
+
+Saturday, November 7, 2026 5:04:10 PM
+db.js:31: console.error('[db] unexpected pool error:', error.message);
+index.js:30: console.error('[api]', error);
+index.js:37: console.log('[db] schema ready on "thebirthdates"');
+index.js:39: console.error('[db] could not initialize schema:', error.message);
+index.js:40: console.error('[db] is Postgres running? Try: npm run db:up');
+index.js:45: console.log(`[api] listening on http://localhost:${PORT}`);
+seed.js:38: console.log(`[seed] skipped, ${rows[0].count} record(s) already present`);
+seed.js:51: console.log(`[seed] inserted ${people.length} sample birthdays`);
+seed.js:56: console.error('[seed] failed:', error.message);
+
+

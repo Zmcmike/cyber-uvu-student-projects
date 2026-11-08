@@ -1,0 +1,42 @@
+
+Saturday, November 7, 2026 6:04:43 PM
+docker : Unable to find image 'zricethezav/gitleaks:latest' locally
+At line:1 char:54
++ ... w-toplevel; docker run --rm -v "${root}:/repo:ro" zricethezav/gitleak ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Unable to find ...latest' locally:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+latest: Pulling from zricethezav/gitleaks
+d49a2dee86fb: Pulling fs layer
+d92b655ae8e2: Pulling fs layer
+61fdfd7c0175: Pulling fs layer
+a43ab0c74cc4: Pulling fs layer
+a43ab0c74cc4: Waiting
+d49a2dee86fb: Verifying Checksum
+d49a2dee86fb: Download complete
+d49a2dee86fb: Pull complete
+a43ab0c74cc4: Verifying Checksum
+a43ab0c74cc4: Download complete
+61fdfd7c0175: Verifying Checksum
+61fdfd7c0175: Download complete
+d92b655ae8e2: Verifying Checksum
+d92b655ae8e2: Download complete
+d92b655ae8e2: Pull complete
+61fdfd7c0175: Pull complete
+a43ab0c74cc4: Pull complete
+Digest: sha256:c00b6bd0aeb3071cbcb79009cb16a60dd9e0a7c60e2be9ab65d25e6bc8abbb7f
+Status: Downloaded newer image for zricethezav/gitleaks:latest
+
+    Γùï
+    ΓöéΓò▓
+    Γöé Γùï
+    Γùï Γûæ
+    Γûæ    gitleaks
+
+1:04AM INF 11 commits scanned.
+1:04AM INF scanned ~710493 bytes (710.49 KB) in 3.89s
+1:04AM INF no leaks found
+exit code: 0
+
+

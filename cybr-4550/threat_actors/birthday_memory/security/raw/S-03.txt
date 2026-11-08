@@ -1,0 +1,12 @@
+
+Saturday, November 7, 2026 6:06:20 PM
+2026-11-08T01:06:46Z	INFO	[gobinary] Detecting vulnerabilities...
+Report Summary
+Γöé postgres:16-alpine (alpine 3.24.4) Γöé  alpine  Γöé        1        Γöé
+Γöé usr/local/bin/gosu                 Γöé gobinary Γöé       61        Γöé
+postgres:16-alpine (alpine 3.24.4)
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 1, HIGH: 0, CRITICAL: 0)
+usr/local/bin/gosu (gobinary)
+Total: 61 (UNKNOWN: 1, LOW: 3, MEDIUM: 31, HIGH: 25, CRITICAL: 1)
+
+

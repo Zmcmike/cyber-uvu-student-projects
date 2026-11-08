@@ -1,0 +1,65 @@
+
+Saturday, November 7, 2026 6:30:05 PM
+http://localhost:5173 -> HTTP 200
+
+IgnoreCase : True
+LineNumber : 134
+Line       :   TCP    [::1]:5173             [::]:0                 LISTENING       27872
+Filename   : InputStream
+Path       : InputStream
+Pattern    : :5173
+Context    : 
+Matches    : {0}
+
+
+IgnoreCase : True
+LineNumber : 135
+Line       :   TCP    [::1]:5173             [::1]:52129            ESTABLISHED     27872
+Filename   : InputStream
+Path       : InputStream
+Pattern    : :5173
+Context    : 
+Matches    : {0}
+
+
+IgnoreCase : True
+LineNumber : 136
+Line       :   TCP    [::1]:5173             [::1]:56943            ESTABLISHED     27872
+Filename   : InputStream
+Path       : InputStream
+Pattern    : :5173
+Context    : 
+Matches    : {0}
+
+
+IgnoreCase : True
+LineNumber : 140
+Line       :   TCP    [::1]:52129            [::1]:5173             ESTABLISHED     28904
+Filename   : InputStream
+Path       : InputStream
+Pattern    : :5173
+Context    : 
+Matches    : {0}
+
+
+IgnoreCase : True
+LineNumber : 141
+Line       :   TCP    [::1]:56943            [::1]:5173             ESTABLISHED     28904
+Filename   : InputStream
+Path       : InputStream
+Pattern    : :5173
+Context    : 
+Matches    : {0}
+
+
+IgnoreCase : True
+LineNumber : 142
+Line       :   TCP    [::1]:60872            [::1]:5173             TIME_WAIT       0
+Filename   : InputStream
+Path       : InputStream
+Pattern    : :5173
+Context    : 
+Matches    : {0}
+
+
+

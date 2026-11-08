@@ -1,0 +1,16 @@
+
+Saturday, November 7, 2026 5:44:58 PM
+ ssl 
+-----
+ off
+(1 row)
+
+ ssl | version 
+-----+---------
+ f   | 
+(1 row)
+
+--- API URL scheme ---
+console.log(`[api] listening on http://localhost:${PORT}`);
+
+

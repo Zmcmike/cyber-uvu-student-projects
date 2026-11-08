@@ -1,0 +1,25 @@
+
+Saturday, November 7, 2026 5:59:36 PM
+  1: services:
+  2:   postgres:
+  3:     image: postgres:16-alpine
+  4:     container_name: thebirthdates-db
+  5:     restart: unless-stopped
+  6:     environment:
+  7:       POSTGRES_DB: thebirthdates
+  8:       POSTGRES_USER: birthday
+  9:       POSTGRES_PASSWORD: birthday
+ 10:     ports:
+ 11:       - "5544:5432"
+ 12:     volumes:
+ 13:       - thebirthdates-data:/var/lib/postgresql/data
+ 14:     healthcheck:
+ 15:       test: ["CMD-SHELL", "pg_isready -U birthday -d thebirthdates"]
+ 16:       interval: 5s
+ 17:       timeout: 5s
+ 18:       retries: 10
+ 19: 
+ 20: volumes:
+ 21:   thebirthdates-data:
+
+

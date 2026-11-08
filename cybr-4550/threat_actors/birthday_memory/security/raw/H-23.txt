@@ -1,0 +1,11 @@
+
+Saturday, November 7, 2026 6:02:02 PM
+--- image tag in compose ---
+docker-compose.yml:3: image: postgres:16-alpine
+--- pinned digest of the running image ---
+sha256:4278d7b1e3deb3193ddc803158f6532963f059fc25a2eefaee4b5a9e71741873
+postgres@sha256:aa6cb33cf4c19c765cefcf48d96176258800870a9a1e930ad126200f9d825139
+--- SBOM / lock files in repo ---
+(end of SBOM search)
+
+

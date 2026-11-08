@@ -1,0 +1,18 @@
+
+Saturday, November 7, 2026 5:20:30 PM
+routes.js:10: const SELECT_COLUMNS = `
+routes.js:11: id, first_name, last_name, birthdate, phone, email, created_at, updated_at
+routes.js:35: OR coalesce(email, '') ILIKE ${p}
+routes.js:36: OR coalesce(phone, '') ILIKE ${p}
+routes.js:48: `SELECT ${SELECT_COLUMNS}
+routes.js:68: const { rows } = await pool.query(`SELECT ${SELECT_COLUMNS} FROM birthdays`);
+routes.js:87: `INSERT INTO birthdays (first_name, last_name, birthdate, phone, email)
+routes.js:89: RETURNING ${SELECT_COLUMNS}`,
+routes.js:90: [value.firstName, value.lastName, value.birthdate, value.phone, value.email],
+routes.js:113: phone      = $4,
+routes.js:114: email      = $5,
+routes.js:117: RETURNING ${SELECT_COLUMNS}`,
+routes.js:122: value.phone,
+routes.js:123: value.email,
+
+

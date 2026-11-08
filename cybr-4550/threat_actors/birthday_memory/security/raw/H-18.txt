@@ -1,0 +1,8 @@
+
+Saturday, November 7, 2026 5:45:44 PM
+db.js:14: PGSSL,
+db.js:17: const ssl = PGSSL === 'true' ? { rejectUnauthorized: false } : undefined;
+db.js:20: ? new pg.Pool({ connectionString: DATABASE_URL, ssl })
+db.js:27: ssl,
+
+

@@ -1,0 +1,16 @@
+
+Saturday, November 7, 2026 5:44:16 PM
+--- DB port on LAN address ---
+
+ComputerName     : 192.168.0.47
+RemotePort       : 5544
+TcpTestSucceeded : True
+
+--- API port on LAN address ---
+
+ComputerName     : 192.168.0.47
+RemotePort       : 4000
+TcpTestSucceeded : True
+
+
+

@@ -1,0 +1,9 @@
+
+Saturday, November 7, 2026 5:41:11 PM
+ current_user | current_database | records 
+--------------+------------------+---------
+ birthday     | thebirthdates    |       8
+(1 row)
+
+
+
